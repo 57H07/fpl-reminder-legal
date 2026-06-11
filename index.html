@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — FPL Reminder</title>
+  <meta name="description" content="Privacy policy for the FPL Reminder Android app. All data is processed on-device; nothing is transmitted to any server.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #1a202c;
+      --muted: #5a6472;
+      --accent: #1d4ed8;
+      --border: #e2e8f0;
+      --table-head: #f1f5f9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1220;
+        --fg: #e2e8f0;
+        --muted: #94a3b8;
+        --accent: #7aa2ff;
+        --border: #243049;
+        --table-head: #16213a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    h1 { font-size: 1.7rem; line-height: 1.3; margin: 0 0 1rem; }
+    h2 { font-size: 1.15rem; margin: 2rem 0 0.5rem; }
+    a { color: var(--accent); }
+    .meta { color: var(--muted); margin: 0 0 0.25rem; }
+    .meta strong { color: var(--fg); }
+    .lang-switch {
+      display: inline-block;
+      margin: 1rem 0 0;
+      font-size: 0.95rem;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.75rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th { background: var(--table-head); }
+    ul { padding-left: 1.4rem; }
+    li { margin: 0.3rem 0; }
+    footer {
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-style: italic;
+      margin-top: 3rem;
+    }
+    code {
+      font-family: ui-monospace, "Cascadia Code", Consolas, monospace;
+      font-size: 0.9em;
+      background: var(--table-head);
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+<main>
+
+  <!-- ============================ ENGLISH ============================ -->
+  <section id="en">
+    <h1>Privacy Policy — FPL Reminder</h1>
+    <p class="meta"><strong>Effective date:</strong> 11 June 2026</p>
+    <p class="meta"><strong>App:</strong> FPL Reminder (<code>com.sthot.flightplanreminder</code>)</p>
+    <p class="meta"><strong>Contact:</strong> <a href="mailto:contact@vfrlogbook.com">contact@vfrlogbook.com</a></p>
+    <p class="lang-switch"><a href="#fr">Version française ci-dessous ↓</a></p>
+
+    <h2>1. What data is collected</h2>
+    <p>FPL Reminder collects and processes the following data, <strong>entirely on your device</strong>:</p>
+    <ul>
+      <li><strong>Precise location (GPS)</strong> — including <strong>in the background</strong>, but only while a flight plan is active in the app. Location tracking starts when you activate a flight plan and stops when the flight plan is closed or cancelled.</li>
+      <li><strong>Flight plan details you enter</strong> — departure and destination aerodromes, estimated times, and related reminder settings.</li>
+      <li><strong>Device locale</strong> — read locally to display the app in your language.</li>
+    </ul>
+    <p>The app does <strong>not</strong> collect: contacts, photos, files, identifiers for advertising, usage analytics, or any account information. There is no sign-up and no user account.</p>
+
+    <h2>2. Why this data is used</h2>
+    <p>Location is used for a single purpose: <strong>to detect that you have landed and remind you to close your VFR flight plan</strong>, helping prevent unnecessary search-and-rescue operations. Background access is required so detection works while your phone is in your pocket or flight bag.</p>
+    <p>Flight plan details are used to schedule local reminders and alarms on your device.</p>
+
+    <h2>3. Where the data goes</h2>
+    <p><strong>Nowhere.</strong> All processing happens <strong>on your device only</strong>:</p>
+    <ul>
+      <li>Flight data is stored locally in an on-device database (SQLite).</li>
+      <li><strong>No data is transmitted to any server.</strong></li>
+      <li><strong>No data is shared with or sold to any third party.</strong></li>
+      <li>The app contains no analytics, advertising, or crash-reporting SDKs and makes no network requests.</li>
+    </ul>
+    <p>When you tap an ATS phone number in the app, your phone's <strong>system dialer</strong> opens with the number pre-filled — the app does not access your call log or place calls itself. The app also contains an optional external link (Buy Me a Coffee) that opens in your browser; that website has its own privacy policy.</p>
+
+    <h2>4. Data retention and deletion</h2>
+    <ul>
+      <li>All data stays on your device.</li>
+      <li>You can delete flight plans at any time from within the app.</li>
+      <li>Uninstalling the app permanently removes all stored data.</li>
+    </ul>
+
+    <h2>5. Permissions summary</h2>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Why</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Precise / approximate location</td><td>Detect landing near the destination aerodrome</td></tr>
+        <tr><td>Background location</td><td>Keep landing detection working while the screen is off</td></tr>
+        <tr><td>Foreground service (location)</td><td>Run the tracking service reliably during an active flight plan</td></tr>
+        <tr><td>Notifications / alarms</td><td>Remind you to close your flight plan</td></tr>
+      </tbody>
+    </table>
+    <p>Location permission is requested in-app and you can revoke it at any time in Android settings; the app's reminder features keep working without it (without automatic landing detection).</p>
+
+    <h2>6. Children</h2>
+    <p>The app is a pilot utility and is not directed at children under 13.</p>
+
+    <h2>7. Your rights (GDPR)</h2>
+    <p>Because no personal data ever leaves your device and the developer has no access to it, there is nothing for the developer to disclose, export, or erase on your behalf — you control all data directly on your device. For any privacy question, contact <a href="mailto:contact@vfrlogbook.com">contact@vfrlogbook.com</a>.</p>
+
+    <h2>8. Changes to this policy</h2>
+    <p>Any material change to this policy will be published at this URL with an updated effective date before taking effect.</p>
+  </section>
+
+  <hr>
+
+  <!-- ============================ FRANÇAIS ============================ -->
+  <section id="fr" lang="fr">
+    <h1>Politique de confidentialité — FPL Reminder</h1>
+    <p class="meta"><strong>Date d'entrée en vigueur :</strong> 11 juin 2026</p>
+    <p class="meta"><strong>Application :</strong> FPL Reminder (<code>com.sthot.flightplanreminder</code>)</p>
+    <p class="meta"><strong>Contact :</strong> <a href="mailto:contact@vfrlogbook.com">contact@vfrlogbook.com</a></p>
+    <p class="lang-switch"><a href="#en">English version above ↑</a></p>
+
+    <h2>1. Données collectées</h2>
+    <p>FPL Reminder collecte et traite les données suivantes, <strong>exclusivement sur votre appareil</strong> :</p>
+    <ul>
+      <li><strong>Position précise (GPS)</strong> — y compris <strong>en arrière-plan</strong>, mais uniquement lorsqu'un plan de vol est actif dans l'application. Le suivi démarre à l'activation du plan de vol et s'arrête à sa clôture ou à son annulation.</li>
+      <li><strong>Détails du plan de vol saisis par vous</strong> — aérodromes de départ et d'arrivée, heures estimées et réglages des rappels.</li>
+      <li><strong>Langue de l'appareil</strong> — lue localement pour afficher l'application dans votre langue.</li>
+    </ul>
+    <p>L'application ne collecte <strong>pas</strong> : contacts, photos, fichiers, identifiants publicitaires, statistiques d'utilisation, ni aucune information de compte. Il n'y a ni inscription ni compte utilisateur.</p>
+
+    <h2>2. Finalité</h2>
+    <p>La position sert à un seul but : <strong>détecter votre atterrissage et vous rappeler de clôturer votre plan de vol VFR</strong>, afin d'éviter le déclenchement inutile d'opérations de recherche et sauvetage. L'accès en arrière-plan est nécessaire pour que la détection fonctionne téléphone en poche ou dans le sac de vol.</p>
+    <p>Les détails du plan de vol servent à programmer des rappels et alarmes locaux sur votre appareil.</p>
+
+    <h2>3. Destination des données</h2>
+    <p><strong>Nulle part.</strong> Tout le traitement est effectué <strong>sur votre appareil uniquement</strong> :</p>
+    <ul>
+      <li>Les données de vol sont stockées localement dans une base de données embarquée (SQLite).</li>
+      <li><strong>Aucune donnée n'est transmise à un serveur.</strong></li>
+      <li><strong>Aucune donnée n'est partagée avec ou vendue à des tiers.</strong></li>
+      <li>L'application ne contient aucun SDK d'analyse, de publicité ou de rapport de plantage et n'effectue aucune requête réseau.</li>
+    </ul>
+    <p>Lorsque vous touchez un numéro de téléphone ATS dans l'application, le <strong>composeur du téléphone</strong> s'ouvre avec le numéro prérempli — l'application n'accède pas à votre journal d'appels et ne passe aucun appel elle-même. L'application contient également un lien externe facultatif (Buy Me a Coffee) qui s'ouvre dans votre navigateur ; ce site dispose de sa propre politique de confidentialité.</p>
+
+    <h2>4. Conservation et suppression</h2>
+    <ul>
+      <li>Toutes les données restent sur votre appareil.</li>
+      <li>Vous pouvez supprimer vos plans de vol à tout moment depuis l'application.</li>
+      <li>La désinstallation de l'application supprime définitivement toutes les données stockées.</li>
+    </ul>
+
+    <h2>5. Récapitulatif des autorisations</h2>
+    <table>
+      <thead>
+        <tr><th>Autorisation</th><th>Raison</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Position précise / approximative</td><td>Détecter l'atterrissage à proximité de l'aérodrome de destination</td></tr>
+        <tr><td>Position en arrière-plan</td><td>Maintenir la détection d'atterrissage écran éteint</td></tr>
+        <tr><td>Service de premier plan (localisation)</td><td>Faire fonctionner le suivi de manière fiable pendant un plan de vol actif</td></tr>
+        <tr><td>Notifications / alarmes</td><td>Vous rappeler de clôturer votre plan de vol</td></tr>
+      </tbody>
+    </table>
+    <p>L'autorisation de localisation est demandée dans l'application et peut être révoquée à tout moment dans les réglages Android ; les rappels continuent de fonctionner sans elle (sans détection automatique d'atterrissage).</p>
+
+    <h2>6. Mineurs</h2>
+    <p>L'application est un utilitaire destiné aux pilotes et ne s'adresse pas aux enfants de moins de 13 ans.</p>
+
+    <h2>7. Vos droits (RGPD)</h2>
+    <p>Aucune donnée personnelle ne quittant votre appareil, le développeur n'y a pas accès et ne peut donc rien divulguer, exporter ou effacer pour vous — vous contrôlez toutes les données directement sur votre appareil. Pour toute question relative à la confidentialité : <a href="mailto:contact@vfrlogbook.com">contact@vfrlogbook.com</a>.</p>
+
+    <h2>8. Modifications de cette politique</h2>
+    <p>Toute modification substantielle de cette politique sera publiée à cette adresse avec une date d'entrée en vigueur mise à jour, avant sa prise d'effet.</p>
+  </section>
+
+  <footer>
+    This document is provided for transparency and Google Play compliance.
+  </footer>
+
+</main>
+</body>
+</html>
